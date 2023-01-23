@@ -1,0 +1,11 @@
+<p-menubar class="black" [model]="items">
+    <ng-template pTemplate="start">
+        <img src="assets/placeholder.jpg" height="40" class="mr-2">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <login *ngIf="!logado()"></login>
+        <div *ngIf="logado()" class="logado">
+            <img class="logado" src="assets/placeholderUser.jpg">
+        </div>
+    </ng-template>
+</p-menubar>
